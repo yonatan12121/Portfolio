@@ -1,6 +1,9 @@
 // @flow strict
 
 import * as React from 'react';
+import Link from 'next/link';
+import Image from 'next/image';
+
 
 function ProjectCard({ project }) {
 
@@ -60,6 +63,22 @@ function ProjectCard({ project }) {
             <span className="text-white">Description:</span>
             <span className="text-cyan-400">{' ' + project.description}</span>
             <span className="text-gray-400">,</span>
+          </div>
+          <Link href={project.demo} target="_blank"  className="ml-4 lg:ml-8 mr-2">
+            <span className="text-white ">Demo:</span>
+            <span className="text-cyan-400">{" "+project.demo}</span>
+            <span className="text-gray-400"></span>
+          </Link>
+        
+
+          <div>
+
+          {/* <Image
+      src={project.image}
+      width={500}
+      height={500}
+      alt="Picture of the author"
+    /> */}
           </div>
           <div><span className="text-gray-400">{`};`}</span></div>
         </code>

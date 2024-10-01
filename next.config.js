@@ -16,6 +16,21 @@ module.exports = {
         hostname: 'media.dev.to',
         pathname: '**',
       },
+      {
+        protocol: 'https',
+        hostname: 'www.pexels.com',
+        port: '',
+        pathname: '**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'www.teletv.et',
+        port: '',
+        pathname: '**',
+      },
+
+      
+
     ],
   },
 }
